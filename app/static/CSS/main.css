@@ -1,0 +1,54 @@
+/* * {
+    border: solid red 1px;
+} */
+
+body {
+    margin: 0px;
+    font-family: 'Lexend', sans-serif;;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+}
+
+.heading {
+    margin:0px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    margin-right: 75px;
+    
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.signin {
+    display: flex;
+    justify-content: center;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.signingin {
+    display: flex;
+    justify-content: center;
+}

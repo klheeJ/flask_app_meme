@@ -1,0 +1,14 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="signingin">
+        <div class="email_field">
+            {{ form.email.label }}
+            {{ form.email(class = "form-control", placeholder = "place email here") }}
+        </div>
+        <div class="pass_field">
+            {{ form.password.label }}
+            {{ form.password(class = "form-control", placeholder = "place password here")}}
+        </div>
+    </div>
+        {{ form.submit_button }}
+</form>

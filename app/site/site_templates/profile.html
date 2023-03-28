@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="profile-top">
+    <h2>{{ current_user.email }}'s user profile</h2>
+</section>
+
+<section class="profile-center">
+    <div class="profile-text">
+        <h2>Here are your profile details</h2>
+        <ul class="profile-list">
+            <li class="profile-list-item">Email: {{ current_user.email }}</li>
+            <li class="profile-list-item">Token: {{ current_user.token }}</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

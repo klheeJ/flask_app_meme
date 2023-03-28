@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/CSS/main.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="nav-container">
+        <div class="navbar-brand">Meme Generator</div>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="{{ url_for('site.home') }}" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="{{ url_for('site.profile') }}" class="navbar-link">Profile</a>
+            </li>
+            {% if current_user.is_authenticated %} 
+            <li class="navbar-item">
+                <a href="{{ url_for('auth.logout') }}" class="navbar-link">Logout</a>
+            </li>
+            {% else %}
+            <li class="navbar-item">
+                <a href="{{ url_for('auth.signup') }}" class="navbar-link">Sign Up</a>
+            </li>
+            <li class="navbar-item">
+                <a href="{{ url_for('auth.signin') }}" class="navbar-link">Sign In</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>

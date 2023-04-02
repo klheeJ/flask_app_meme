@@ -31,3 +31,4 @@ class JSONEncoder(json.JSONEncoder):
         if isinstance(obj, decimal.Decimal):
             return str(obj)
         return super(JSONEncoder, self).default(obj)
+    

@@ -1,16 +1,22 @@
-/* * {
-    border: solid red 1px;
-} */
-
 body {
-    margin: 0px;
-    font-family: 'Lexend', sans-serif;;
+    background-color: rgb(180, 180, 226);
+    font-family: 'Lexend', sans-serif;
 }
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
 
 .navbar-brand {
     display: flex;
     align-items: center;
     margin-left: 75px;
+
 }
 
 .heading {
@@ -22,7 +28,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
-    background-color: aliceblue;
+
 }
 
 .navbar-list {
@@ -51,4 +57,12 @@ body {
 .signingin {
     display: flex;
     justify-content: center;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+    margin-top: 7%;
 }
